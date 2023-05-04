@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning WGPU!</title>
+    <style>
+        canvas {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body id="wasm-example">
+  <script type="module">
+      import init from "./pkg/hello_wgpu.js";
+      init().then(() => {
+          console.log("WASM Loaded... nice");
+      });
+  </script>
+</body>
+
+</html>
